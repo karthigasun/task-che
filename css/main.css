@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+h3,h4,h5,h6{
+    margin-top: 12px;
+}
 ul{
     list-style: none;
 }
@@ -11,197 +14,185 @@ a{
     text-decoration: none;
     text-decoration-color: black;
 }
-button{
-    cursor: pointer;
-}
-.head-btn{
+.btn{
     color: #fff;
-    padding: 6px 15px;
     background-color: #03a5fc;
+    padding: 8px 15px;
+    margin-top: 8px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
+    /* font-size: 15px; */
 }
-.banner-name h5 span{
-    letter-spacing: 3px;
+.btn:hover{
+    color: #fff;
+    background-color: #03a5fc;
 }
-.banner-name h5 img{
-    height: 20px;
+.title{
+    padding:20px;
+    margin-top:20px;
+    text-align:center;
 }
-.banner-name h2{
-    font-size: 100px
-}
-.banner-name h6 span{
-    border-right: 2px solid #03a5fc;
-    padding: 0px 5px;
-}
-.img-det{
-    display: none;
-    visibility: hidden;
-}
- @media(min-width:1200px){
-    .img-det{
-        display: block;
-        visibility: visible;
-    }
-    .post{
-        position:relative ;
-    }
-    .img-det{
-        position: absolute;
-        bottom: 12%;
-        /* left: 0; */
-        /* top: 0; */
-        right: 28%;
-        text-align-last: center;
-        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-        padding: 15px;
-        border-radius: 20px;
-        opacity: 88%;
-    }
-    .banner-name{
-        text-align: start;
-        position: absolute;
-        left: 220px;
-        bottom: 150px;
-        z-index: 1;
-    }
-
-}
-
-.img-det i{
-    padding: 10px 2px;
-    color: #03a5fc;
-}
-.img-det p{
+.title h3{
+    font-weight: 800;
+    font-size: 48px;
     color: #444;
-    padding: 6px 0px;
+    margin-bottom: 20px;
 }
-.img-det h5{
-    font-weight: bold;
-    color: #03a5fc;
-} 
-#color-back{
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+.about-text h6{
+    font-size: 18px;
+    margin-bottom: 14px;
+    font-weight: 600;
 }
-#circle{
-    position: relative;
+.about-text h2{
+    font-size: 36px;
+    margin-bottom: 14px;
 }
-#circle::after{
-    position: absolute;
-    content: "";
-    background-color: #fff;
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    z-index: -1;
-    /* top: 0; */
-    right: 0;
-    left: 0;
-    /* bottom: 0; */
+.about-text h2 span{
+    font-size: 40px;
+    font-weight: 700;
 }
-/* .d-flex{
-    display: flex;
-    justify-content: space-between;
+.about-text h5,.about-text h4{
+    font-size: 18px;
+    margin-bottom: 14px;
 }
-.container{
-    margin:auto;
-    width: 90%;
+.about-text p{
+    font-size: 15px;
+    line-height: 30px;
 }
-button{
-    border: none;
-    background: transparent;
-    cursor: pointer;
-}
-.header{
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    height: 100vh;
-    z-index: -2;
-}
-.header-container{
-    padding-bottom: 40px;
-}
-.header-top{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0px;
-}
-.loga a{
-    padding: 10px 0px;
-}
-.nav ul{
-    display: flex;
-    justify-content: space-between;
-}
-.nav ul li{
-    margin: 6px 25px 0px 0px;
-    padding: 5px 14px;
-    
-}
-.nav ul li a{
-    color: #333;
-}
-.nav-right button{
-    margin-top: 6px;
-    padding: 8px 14px;
-    background-color: #03a5fc;
-    color: #fff;
-    border-radius: 12px;
-}
-.banner-image{
-    text-align: center;
-    position: relative;
-    z-index: 44;
-}
-.banner-image .user{
-    height: 543px;
-}
-.header::after{
-    content: "";
-    position: absolute;
-    height: 450px;
-    width: 450px;
-    border-radius: 50%;
-    top: 25%;
-    left: 33%;
-    background-color: #fff;
-    z-index: 2;
-}
-.banner{
-    position: absolute;
-    top: 150px;
-    left: 160px;
-    text-align: initial;
-}
-.banner h2{
+.about-text-2 p{
     font-size: 18px;
 }
-.banner h2 img{
-    height: 18px;
-}
-.banner h2 span{
-    font-size: 120px;
-    letter-spacing: 3px;
+.about-text-2 p span{
     font-weight: bold;
+}
+.ico{
+    text-align: center;
+}
+.ico h4{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.skill-det{
+    padding: 10px 0px;
+}
+.skill-yr span{
+    color: #03a5fc;
+}
+.skill-des h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+.skill-des h4 span{
+    font-size: 15px;
+    font-weight: 300;
+}
+.skill-dur span{
+    font-size: 18px;
+}
+.service-ico{
+    position: relative;
+}
+/* .service-ico::after{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    margin: auto;
+} */
+.ser-bot p{
+    line-height: 30px;
+}
+.ser-bot h4{
+    margin-top: 12px;
+}
+@media(min-width:992px){
+    .pro-top{
+        margin-top: -20px;
+    }
+}
+.people-ico i{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: inline-flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #03a5fc;
+    box-shadow: 2px 2px 5px #444;
+}
+.peo-icons i{
+    color: #03a5fc;
+}
+.peo-det h6{
+    font-size: 18px;
+}
+.peo-det-1 p{
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin: 40px;
+}
+.people-img img{
+    height: 120px;
+    width: 120px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog-img img{
+    border-radius: 20px;
+}
+.email h5{
+    padding: 6px 18px;
+    background-color: #f2a0e5;
+    border-radius: 12px;
+}
+.email h5 span{
+    margin-left: 16px;
+}
+.phone h5{
+    padding: 6px 18px;
+    background-color: #75bdd9;
+    border-radius: 12px;
+}
+.uname,u-email,.csub,.c-message{
+    padding: 13px;
+}
+input,textarea{
+    border: none;
+    padding: 10px 14px;
+    border-bottom: #444 1px solid;
+    max-width: 100%;
 }
 
-.ban-right i{
-    font-size: 15px;
-    padding: 10px 2px;
-    color: #03a5fc;
-}
-.ban-right p{
-    font-size: 20px;
-    color: #444;
-    padding: 6px 0px;
-}
-.ban-right h5{
-    font-size: 20px;
-    font-weight: bold;
-    color: #03a5fc;
-    padding-top: 12px;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
