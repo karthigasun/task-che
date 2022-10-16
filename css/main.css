@@ -27,6 +27,9 @@ a{
     color: #fff;
     background-color: #03a5fc;
 }
+.ban-image img{
+    position: relative;
+}
 .title{
     padding:20px;
     margin-top:20px;
@@ -77,10 +80,12 @@ a{
 }
 .skill-yr span{
     color: #03a5fc;
+    margin-top: 12px;
 }
 .skill-des h4{
     font-size: 20px;
     font-weight: bold;
+    margin: 0;
 }
 .skill-des h4 span{
     font-size: 15px;
@@ -88,6 +93,7 @@ a{
 }
 .skill-dur span{
     font-size: 18px;
+    margin-top: 12px;
 }
 .service-ico{
     position: relative;
@@ -162,16 +168,28 @@ a{
     background-color: #75bdd9;
     border-radius: 12px;
 }
-.uname,u-email,.csub,.c-message{
+.uname,.u-email,.csub,.c-message{
     padding: 13px;
 }
 input,textarea{
     border: none;
     padding: 10px 14px;
     border-bottom: #444 1px solid;
-    max-width: 100%;
+    width: 100%;
 }
-
+.footer-right i{
+    padding: 0px 5px;
+    color: #03a5fc;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #03a5fc;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 4px;
+}
 
 
 
