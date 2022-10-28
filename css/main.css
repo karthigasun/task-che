@@ -25,19 +25,23 @@ a{
     background-color: #fff;
     transition: 1s;
 }
-.top-icon{
-    right: 50px;
-    left: auto;
-    top: 25px;
-}
 .top-icon i{
     font-size: 30px;
+    margin-top: 12px;
+    display: inline-block;
 }
 .button{
     display: none;
 }
-.nav-item {
-    margin-left:15px;
+
+.nav-item:hover{
+    color:#1877f2;
+    transition: 0.2s;
+}
+@media(min-width:1200px){
+    .nav-item {
+        margin-left:15px;
+    }
 }
 .logo{
     margin-top: 10px;
@@ -48,18 +52,9 @@ a{
     right: 0;
     bottom: 0;
 }
-.h-scrol{
-    background-color: #fff;
-}
 .banner{
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    /* background-image: url(../images/user-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh; */
-    padding-top: 60px;
-
+    background-image: linear-gradient(62deg, #e4f6ff 0%, #f3eaff 100%);
+    padding-top: 90px;
 }
 #spa{
     display: none;
@@ -67,6 +62,9 @@ a{
 @media(min-width:992px){
     .top-icon{
         display: none;
+    }
+    .banner{
+        padding-top: 60px;
     }
     .button{
         display: block;
@@ -118,14 +116,24 @@ a{
         transform: translateX(-50%);
         z-index: -1;
     }
+    .banner-left h2{
+        font-size: 100px!important;
+        letter-spacing: 6px;
+        font-weight: 800;
+    }
     
 }
-/* .ban-right{
+.img-det-ico i,.img-det-text h5{
+    color: #1877f2;
+    font-weight: 700;
+}
+.banner-left{
     text-align: center;
-} */
+}
 .banner-left h5{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .banner-left img{
     height: 25px;
@@ -136,7 +144,7 @@ a{
     font-weight: bold;
 }
 .banner-left h2{
-    font-size: 100px;
+    font-size: 60px;
     letter-spacing: 6px;
     font-weight: 800;
 }
@@ -193,6 +201,11 @@ a{
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+}
+.box-img{
+    border-radius: 50%;
+    box-shadow:  0px 12px 5px #c5cfe4;
+    padding: 10px;
 }
 @media(min-width:992px){
     .ico{
@@ -318,7 +331,6 @@ a{
 }
 .email h5 span{
     margin-left: 16px;
-    letter-spacing: 2px;
 }
 .phone h5 span{
     letter-spacing: 2px;
@@ -363,8 +375,8 @@ textarea:focus{
 }
 .up-arrow{
     left: auto;
-    right: 25px;
-    bottom: 20px;
+    right: 40px;
+    bottom: 25px;
     font-size: 40px;
     height: 50px;
     width: 50px;
